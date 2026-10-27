@@ -42,17 +42,17 @@ public class Main {
 
         //EXAMPLE 5: Creating a generic stack structure
         System.out.println("\nEXAMPLE 5: Creating a generic class (stack)");  
-        StackList myStack1 = new StackList();
+        StackList<String> myStack1 = new StackList();
         myStack1.push("Alvin");
         myStack1.push("Theodore");
         myStack1.push("Simon");
         System.out.println(myStack1);
 
-        //StackList<Double> myStack2 = new StackList<>();
-        //myStack2.push(1.5);
-        //myStack2.push(2.8);
-        //myStack2.push(3.14);
-        //System.out.println(myStack2);
+        StackList<Double> myStack2 = new StackList<>();
+        myStack2.push(1.5);
+        myStack2.push(2.8);
+        myStack2.push(3.14);
+        System.out.println(myStack2);
 
         //EXAMPLE 6: Creating a generic pair structure (similar to map)
       
@@ -81,6 +81,8 @@ public class Main {
             System.out.println(p.getKey() + " " + p.getValue());
         }
         
+        Pair3<Integer> p3 = new Pair3<>(3, 6);
+        System.out.println(p3);
     }
 }
 
